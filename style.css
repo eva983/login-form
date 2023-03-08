@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(219, 179, 179);
+    background:url('./bg.jpg');
+}
+.login-box {
+    position: fixed;
+}
+
+.login-box .btnLogIn{
+    background: rgb(113, 155, 141);
+    width:130px;
+    height: 50px;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    cursor: pointer ;
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+}
+
+.login-box .btnLogIn:hover{
+    background: rgb(197, 222, 214);
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+
+}
+
+
+
+.container .close {
+    position: absolute;
+    top:0;
+    right:0;
+    color:rgb(0, 0, 0);
+    background: white;
+    width:45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .form-box {
+    width: 100%;
+    padding: 40px;;
+}
+
+.form-box h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    border-bottom: 2px solid rgb(44, 44, 44);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label    
+{
+    top:-5px;
+}
+
+.input-box .visible {
+    position: absolute;
+    right: 8px;
+    line-height: 57px;
+}
+
+.input-box .email_icon {
+    position: absolute;
+    right: 8px;
+    line-height: 57px;
+   background-color: aliceblue;
+}
+
+.remem-forgot-pass {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: -15px 0px 15px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.remem-forgot-pass label input {
+    accent-color: black;
+    margin-right:4px;
+    
+}
+
+.remem-forgot-pass a {
+    color:white;
+    text-decoration: none;
+}
+
+.remem-forgot-pass a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.btn {
+    cursor: pointer ;
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+}
+
+.btn:hover{
+    background: rgb(197, 222, 214);
+}
+
+.container .capstxt {
+    
+    font-weight: 500;
+    margin-bottom: 7px;
+}
